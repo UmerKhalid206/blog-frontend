@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar {
+  width: 0.4rem;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: black;
+  outline: 1px solid black;
+  border-bottom-left-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+}
+
+.reactions-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   /* margin-top: 20px; */
+ }
+
+ .signUpShadow{
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)
+ }
+ 
+ .reactions-picker {
+   display: flex;
+ }
+ 
+ .reaction {
+   font-size: 24px;
+   cursor: pointer;
+   margin-right: 10px;
+   transition: transform 0.2s ease-in-out;
+ }
+ 
+ .reaction:hover {
+   transform: scale(1.2);
+ }
+ 
+ .selected-reaction {
+   font-size: 18px;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   background-color: #f0f0f0;
+ }
+ 
+
+.Box-Shadow{
+   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.emoji-picker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100vh;
+ }
+ .selected-emoji {
+    font-size: 5rem;
+ }
+ .emoji-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 16px;
+    font-size: 3rem;
+    margin-top: 1rem;
+ }
+ .emoji-item {
+    padding: 8px;
+    cursor: pointer;
+ }
+
+ input::-webkit-outer-spin-button,
+ input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+ }
+
+
